@@ -4,6 +4,9 @@ CleanSource scans your project and reports every file and folder that is **not c
 
 CleanSource is designed to be **language-agnostic**, but it has currently only been tested against **JavaScript** and **Go** projects. Other languages may work, but results aren't guaranteed yet.
 
+## Video Demo
+<p align="center"> <img src="./demo.gif" alt="winTree demo" width="800"> </p>
+
 ## Installation
 
 ```bash
