@@ -28,7 +28,7 @@ var root = &cobra.Command{
 	Use: "cleansource",
 	Short: "Clean every file or folder that are not needed in the project ",
 	Args: cobra.ExactArgs(1),
-	Version: "v1.0.0",
+	Version: "1.0.0",
 	Run: func(cmd *cobra.Command, args []string) {
 
 		globalvar.BasePath = args[0]

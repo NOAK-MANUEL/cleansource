@@ -41,6 +41,7 @@ func CheckDir(
 )  {
 
 
+
     // If start file is provided
     if startPath != "" {
         OpenFile(
@@ -61,9 +62,10 @@ func CheckDir(
                 newPath := filepath.Join(path, entry.Name())
 
 
-        if slices.Contains(ignoreList, newPath) {
-            continue
-        }
+         if matchIgnore(filepath.Base(path),ignoreList){
+        continue
+    }
+
 
 
         if entry.IsDir() {
@@ -95,7 +97,7 @@ func OpenFile(
 
 
 
-    if slices.Contains(ignore, path) {
+    if slices.Contains(ignore, filepath.Base(path)) {
         return 
     }
 
